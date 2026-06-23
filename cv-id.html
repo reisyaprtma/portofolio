@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Reisya Pratama | Junior Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.5;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        .a4-page {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: white;
+            padding: 40px 50px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            border-bottom: 2px solid #e5e7eb;
+            margin-bottom: 1rem;
+            padding-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+        }   
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #111827;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .role-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #111827;
+        }
+
+        .company-name {
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .date-range {
+            font-size: 0.875rem;
+            color: #6b7280;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ATS-friendly bullet list menggunakan native <ul> */
+        .praq-list {
+            list-style: disc;
+            padding-left: 1.1rem;
+        }
+
+        .praq-list li {
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+            color: #4b5563;
+            text-align: justify;
+            padding-left: 0.2rem;
+        }
+
+        /* Skills: teks biasa dipisah koma — ATS-safe */
+        .skills-text {
+            font-size: 0.875rem;
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .metric-highlight {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        @media print {
+            body { background: none; }
+            .a4-page { margin: 0; box-shadow: none; padding: 30px 40px; width: 100%; max-width: 100%; }
+            .no-print { display: none; }
+            a { text-decoration: none; color: inherit; }
+            .lang-switch { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Switch Button -->
+    <div class="lang-switch no-print">
+        <a href="cv.html" class="inline-flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-50 hover:border-blue-500 hover:text-blue-600 transition-all duration-200">
+            <i class="fa-solid fa-language"></i>
+            Switch to English
+        </a>
+    </div>
+
+    <div class="a4-page">
+        <!-- Header -->
+        <header class="text-center mb-6">
+            <h1 class="text-3xl font-bold text-gray-900 uppercase tracking-tight mb-1">Reisya Pratama</h1>
+            <h2 class="text-lg text-gray-700 font-medium mb-3">Junior Software Engineer (Web, Mobile &amp; AI)</h2>
+            
+            <!-- ATS-friendly contact: teks biasa tanpa ikon saja -->
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-gray-600">
+                <span>Pontianak, Indonesia</span>
+                <span>|</span>
+                <span>+62 813-5199-8132</span>
+                <span>|</span>
+                <span>reisyaprtm@gmail.com</span>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/reisya-pratama-bb2ba0306/" class="hover:text-blue-600">linkedin.com/in/reisya-pratama-bb2ba0306</a>
+                <span>|</span>
+                <a href="https://github.com/reisyaprtma" class="hover:text-gray-900">github.com/reisyaprtma</a>
+            </div>
+        </header>
+
+        <!-- Ringkasan Profesional -->
+        <section class="mb-6">
+            <div class="section-header">
+                <h3 class="section-title">Ringkasan Profesional</h3>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                Mahasiswa tingkat akhir Teknik Informatika dan <strong>Lulusan Bangkit 2024</strong> dengan pengalaman langsung dalam pengembangan full-cycle menggunakan <strong>Laravel, Node.js, React, Next.js, dan Kotlin</strong>. Berhasil menyelesaikan proyek klien mulai dari sistem manajemen kerja hingga aplikasi web berbasis AI, dengan menerjemahkan kebutuhan bisnis yang kompleks menjadi solusi teknis yang terukur. Mencari peran Junior Software Engineer atau Frontend Developer untuk mengoptimalkan keahlian dalam React, Next.js, integrasi AI, dan arsitektur kode yang efisien.
+            </p>
+        </section>
+
+        <!-- Keahlian Teknis — teks biasa dipisah koma, ATS-safe -->
+        <section class="mb-6">
+            <div class="section-header">
+                <h3 class="section-title">Keahlian Teknis</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div>
+                    <strong class="block text-gray-800 mb-1">Bahasa &amp; Framework:</strong>
+                    <p class="skills-text text-gray-600">PHP (Laravel), JavaScript, Node.js, React, Next.js, Python, FastAPI, Kotlin, Tailwind CSS, HTML, CSS, MySQL, PostgreSQL</p>
+                </div>
+                <div>
+                    <strong class="block text-gray-800 mb-1">Tools &amp; AI Engineering:</strong>
+                    <p class="skills-text text-gray-600">RESTful API, Git, GitHub, LLM API, Prompt Engineering, n8n Workflows, Arsitektur MVVM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Kerja -->
+        <section class="mb-6">
+            <div class="section-header">
+                <h3 class="section-title">Pengalaman Kerja</h3>
+            </div>
+
+            <div class="mb-5">
+                <div class="flex justify-between items-baseline mb-1">
+                    <div>
+                        <span class="role-title">AI Engineer Intern</span>
+                        <span class="mx-1 text-gray-400">|</span>
+                        <span class="company-name">PT. Kreasi Bali Sasmita</span>
+                    </div>
+                    <span class="date-range">Februari 2026 &ndash; Juni 2026</span>
+                </div>
+                <p class="text-xs text-gray-500 mb-1">Tech Stack: Python, FastAPI, PostgreSQL, Google Sheets API</p>
+                <ul class="praq-list">
+                    <li>Mengintegrasikan kemampuan AI ke dalam produk utama perusahaan, KBS School Management System (LMS), melalui partisipasi aktif dalam proyek Edumind AI, menghadirkan fitur-fitur edukatif cerdas bagi pengguna akhir.</li>
+                    <li>Berkontribusi dalam pengembangan layanan backend AI menggunakan Python dan FastAPI, dengan PostgreSQL sebagai basis data utama, mendukung pipeline fitur Edumind AI.</li>
+                    <li>Berpartisipasi dalam perancangan dan perencanaan arsitektur KBS AI Chatbot, mendefinisikan alur percakapan dan titik integrasi dengan infrastruktur LMS yang sudah ada.</li>
+                </ul>
+            </div>
+
+            <div class="mb-5">
+                <div class="flex justify-between items-baseline mb-1">
+                    <div>
+                        <span class="role-title">Junior AI Engineer</span>
+                        <span class="mx-1 text-gray-400">|</span>
+                        <span class="company-name">Futurescale Digital Technology</span>
+                    </div>
+                    <span class="date-range">September 2025 &ndash; Desember 2025</span>
+                </div>
+                <ul class="praq-list">
+                    <li>Mengembangkan 2 demo chatbot AI fidelitas tinggi menggunakan Node.js dan integrasi LLM, yang langsung digunakan dalam presentasi kepada calon klien enterprise untuk mendemonstrasikan kapabilitas produk.</li>
+                    <li>Merancang dan menyempurnakan mekanisme prompt khusus, mencapai akurasi respons yang tinggi selama fase pengujian, memastikan interaksi yang andal dan kontekstual untuk pengguna akhir.</li>
+                    <li>Berkolaborasi dengan tim produk untuk mengintegrasikan fitur Generative AI ke dalam alur kerja yang sudah ada, membangun fondasi teknis untuk modul AI komersial di masa mendatang.</li>
+                </ul>
+            </div>
+
+            <div class="mb-5">
+                <div class="flex justify-between items-baseline mb-1">
+                    <div>
+                        <span class="role-title">Fullstack Web Developer</span>
+                        <span class="mx-1 text-gray-400">|</span>
+                        <span class="company-name">Freelance (Berbasis Proyek)</span>
+                    </div>
+                    <span class="date-range">Mei 2025 – Juni 2025</span>
+                </div>
+                <ul class="praq-list">
+                    <li>Mengubah alur kerja manual berbasis Excel menjadi Sistem Manajemen Kerja terpusat menggunakan Laravel &amp; MySQL, menghilangkan redundansi data dan masalah versi file.</li>
+                    <li>Mengimplementasikan Role-Based Access Control (RBAC) untuk mengelola hak akses secara aman bagi 1 Admin dan beberapa Worker, menyederhanakan proses penugasan dan pelacakan.</li>
+                    <li>Mengotomatiskan pelaporan proyek dan pembaruan dashboard secara real-time, meningkatkan transparansi operasional secara signifikan dibandingkan sistem entri manual sebelumnya.</li>
+                </ul>
+            </div>
+
+            <div class="mb-5">
+                <div class="flex justify-between items-baseline mb-1">
+                    <div>
+                        <span class="role-title">Instruktur Coding</span>
+                        <span class="mx-1 text-gray-400">|</span>
+                        <span class="company-name">Freelance</span>
+                    </div>
+                    <span class="date-range">September 2024 – Mei 2025</span>
+                </div>
+                <ul class="praq-list">
+                    <li>Membimbing mahasiswa dalam topik inti Ilmu Komputer: Struktur Data, Algoritma, Pemrograman Web, dan Kecerdasan Buatan.</li>
+                    <li>Menerjemahkan konsep teknis yang kompleks menjadi modul pembelajaran praktis, menghasilkan 100% mentee meraih nilai A di ujian akhir masing-masing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Proyek Unggulan -->
+        <section class="mb-6">
+            <div class="section-header">
+                <h3 class="section-title">Proyek Unggulan</h3>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between items-start">
+                    <div class="font-bold text-gray-800 text-sm">SoundMood — Aplikasi Android (Capstone Bangkit)</div>
+                    <a href="https://github.com/SoundMood/mobile-development" class="text-xs text-blue-600 hover:underline">github.com/SoundMood</a>
+                </div>
+                <p class="text-xs text-gray-500 mb-1">Tech Stack: Kotlin, MVVM, Retrofit, Spotify API, ML Model API</p>
+                <ul class="praq-list mt-1">
+                    <li>Memimpin rekayasa frontend mobile, menerjemahkan wireframe menjadi UI fungsional menggunakan Kotlin dengan arsitektur MVVM.</li>
+                    <li>Mengintegrasikan Spotify API dan custom ML Model API, mencapai akurasi prediksi mood 80% pada MVP final yang dipresentasikan untuk capstone.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between items-start">
+                    <div class="font-bold text-gray-800 text-sm">Cortisoul — Aplikasi Web Kesehatan Mental</div>
+                    <a href="https://github.com/reisyaprtma/cortisoul" class="text-xs text-blue-600 hover:underline">github.com/reisyaprtma/cortisoul</a>
+                </div>
+                <p class="text-xs text-gray-500 mb-1">Tech Stack: React, Next.js, Tailwind CSS | Peran: Frontend Developer</p>
+                <ul class="praq-list mt-1">
+                    <li>Mengembangkan antarmuka frontend aplikasi web kesehatan mental, mengimplementasikan fitur Smart Journaling yang menganalisis catatan jurnal harian pengguna menggunakan AI untuk menampilkan tingkat stres dan kondisi mental secara akurat.</li>
+                    <li>Membangun komponen UI yang responsif dan aksesibel menggunakan React, Next.js, dan Tailwind CSS, memastikan pengalaman pengguna yang tenang dan intuitif sesuai praktik terbaik kesehatan mental.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between items-start">
+                    <div class="font-bold text-gray-800 text-sm">IntelliGem — Asisten Dokumen Berbasis AI</div>
+                    <a href="https://github.com/yeoreium/intelliGem" class="text-xs text-blue-600 hover:underline">github.com/yeoreium/intelliGem</a>
+                </div>
+                <p class="text-xs text-gray-500 mb-1">Tech Stack: Node.js, Google Gemini API, Prompt Engineering</p>
+                <ul class="praq-list mt-1">
+                    <li>Membangun asisten AI full-stack menggunakan Node.js, memanfaatkan prompt engineering tingkat lanjut pada Google Gemini 2.5 Flash API untuk memberikan parafrase dan ringkasan yang kontekstual.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between items-start">
+                    <div class="font-bold text-gray-800 text-sm">Chatbot Rekrutmen HR</div>
+                    <a href="https://github.com/reisyaprtma/HR-Chatbot" class="text-xs text-blue-600 hover:underline">github.com/reisyaprtma/HR-Chatbot</a>
+                </div>
+                <p class="text-xs text-gray-500 mb-1">Tech Stack: n8n, LLM API, Automation Workflows</p>
+                <ul class="praq-list mt-1">
+                    <li>Merancang agen rekrutmen otomatis menggunakan n8n dan AI yang mengotomatiskan pelabelan dan analisis kandidat.</li>
+                    <li>Menyederhanakan proses penyaringan awal dengan menggantikan peninjauan manual menggunakan evaluasi standar berbasis AI yang instan.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Pendidikan & Sertifikasi -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <div class="section-header">
+                    <h3 class="section-title">Pendidikan</h3>
+                </div>
+                <div class="mb-3">
+                    <div class="font-bold text-gray-800 text-sm">Universitas Tanjungpura</div>
+                    <div class="text-sm text-gray-600">Sarjana Teknik Informatika</div>
+                    <div class="text-xs text-gray-500 mt-1">Agustus 2022 – Sekarang (Tingkat Akhir)</div>
+                </div>
+                <div>
+                    <div class="font-bold text-gray-800 text-sm">Bangkit Academy 2024 — Google, GoTo, Traveloka</div>
+                    <div class="text-sm text-gray-600">Cohort Mobile Development (Lulusan)</div>
+                    <div class="text-xs text-gray-500 mt-1">September 2024 – Desember 2024</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-header">
+                    <h3 class="section-title">Sertifikasi</h3>
+                </div>
+                <ul class="text-sm text-gray-600 space-y-2">
+                    <li>
+                        <div class="font-medium text-gray-800">Lulusan Bangkit Academy — Mobile Development</div>
+                        <div class="text-xs text-gray-500">Google, GoTo, Traveloka &bull; 2024</div>
+                    </li>
+                    <li>
+                        <div class="font-medium text-gray-800">Belajar Pengembangan Aplikasi Android Intermediate</div>
+                        <div class="text-xs text-gray-500">Dicoding Indonesia &bull; 2024</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
