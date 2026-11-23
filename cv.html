@@ -3,92 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Reisya Pratama | Junior Software Engineer</title>
+    <title>Resume - Reisya Pratama | Software & AI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
             background-color: #f3f4f6;
-            color: #1f2937;
-            line-height: 1.5;
+            color: #111827;
+            line-height: 1.45;
+            font-size: 10.2pt;
         }
-        
+
         @page {
             size: A4;
-            margin: 0;
+            margin: 12mm 14mm;
         }
-        
+
         .a4-page {
             max-width: 210mm;
             min-height: 297mm;
             margin: 20px auto;
-            background: white;
-            padding: 40px 50px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            padding: 34px 42px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
         }
 
         .section-header {
-            border-bottom: 2px solid #e5e7eb;
-            margin-bottom: 1rem;
-            padding-bottom: 0.25rem;
-            display: flex;
-            align-items: center;
-        }   
+            border-bottom: 1.5px solid #1f2937;
+            margin-bottom: 0.6rem;
+            padding-bottom: 0.16rem;
+        }
 
         .section-title {
-            font-size: 1.1rem;
+            font-size: 0.92rem;
             font-weight: 700;
             color: #111827;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.06em;
+        }
+
+        .entry-block {
+            margin-bottom: 0.85rem;
+            page-break-inside: avoid;
         }
 
         .role-title {
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.94rem;
             color: #111827;
         }
 
         .company-name {
             font-weight: 600;
             color: #374151;
+            font-size: 0.9rem;
         }
 
         .date-range {
-            font-size: 0.875rem;
-            color: #6b7280;
-            font-variant-numeric: tabular-nums;
-        }
-
-        /* ATS-friendly bullet list using native <ul> */
-        .praq-list {
-            list-style: disc;
-            padding-left: 1.1rem;
-        }
-
-        .praq-list li {
-            margin-bottom: 0.4rem;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
             color: #4b5563;
-            text-align: justify;
-            padding-left: 0.2rem;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
         }
 
-        /* Skills: comma-separated plain text is ATS-safe */
-        .skills-text {
-            font-size: 0.875rem;
-            color: #374151;
-            line-height: 1.8;
+        .tech-line {
+            font-size: 0.79rem;
+            color: #4b5563;
+            margin-bottom: 0.22rem;
         }
 
-        .metric-highlight {
-            font-weight: 600;
+        .cv-list {
+            list-style: disc;
+            padding-left: 1.15rem;
+            margin-top: 0.18rem;
+        }
+
+        .cv-list li {
+            margin-bottom: 0.25rem;
+            font-size: 0.87rem;
             color: #1f2937;
+        }
+
+        .skills-row {
+            font-size: 0.85rem;
+            color: #1f2937;
+            margin-bottom: 0.2rem;
         }
 
         .lang-switch {
@@ -99,78 +101,101 @@
         }
 
         @media print {
-            body { background: none; }
-            .a4-page { margin: 0; box-shadow: none; padding: 30px 40px; width: 100%; max-width: 100%; }
-            .no-print { display: none; }
-            a { text-decoration: none; color: inherit; }
-            .lang-switch { display: none; }
+            body {
+                background: #ffffff;
+                font-size: 9.6pt;
+            }
+            .a4-page {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                width: 100%;
+                max-width: 100%;
+                min-height: auto;
+            }
+            .no-print, .lang-switch {
+                display: none !important;
+            }
+            a {
+                text-decoration: none;
+                color: #111827;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Language Switch Button -->
     <div class="lang-switch no-print">
-        <a href="cv-id.html" class="inline-flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-50 hover:border-blue-500 hover:text-blue-600 transition-all duration-200">
-            <i class="fa-solid fa-language"></i>
+        <a href="cv-id-v3.html" class="inline-flex items-center gap-2 bg-white border border-gray-300 shadow-sm px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-50 transition-all">
             Versi Bahasa Indonesia
         </a>
     </div>
 
     <div class="a4-page">
-        <header class="text-center mb-6">
-            <h1 class="text-3xl font-bold text-gray-900 uppercase tracking-tight mb-1">Reisya Pratama</h1>
-            <h2 class="text-lg text-gray-700 font-medium mb-3">Junior Software Engineer (Web, Mobile &amp; AI Focus)</h2>
-            
-            <!-- ATS-friendly contact: plain text labels, no icon-only links -->
-            <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-gray-600">
+        <!-- Header -->
+        <header class="text-center mb-5">
+            <h1 class="text-2xl font-bold text-gray-900 uppercase tracking-tight mb-1">Reisya Pratama</h1>
+            <p class="text-sm text-gray-700 font-medium mb-2">Software Engineer (Full-Stack Web, Automation &amp; AI)</p>
+            <div class="flex flex-wrap justify-center gap-x-2 gap-y-1 text-xs text-gray-600">
                 <span>Pontianak, Indonesia</span>
                 <span>|</span>
                 <span>+62 813-5199-8132</span>
                 <span>|</span>
-                <span>reisyaprtm@gmail.com</span>
+                <a href="mailto:reisyaprtm@gmail.com" class="hover:underline">reisyaprtm@gmail.com</a>
                 <span>|</span>
-                <a href="https://www.linkedin.com/in/reisya-pratama-bb2ba0306/" class="hover:text-blue-600">linkedin.com/in/reisya-pratama-bb2ba0306</a>
+                <a href="https://www.linkedin.com/in/reisya-pratama-bb2ba0306/" class="hover:underline">linkedin.com/in/reisya-pratama-bb2ba0306</a>
                 <span>|</span>
-                <a href="https://github.com/reisyaprtma" class="hover:text-gray-900">github.com/reisyaprtma</a>
+                <a href="https://github.com/reisyaprtma" class="hover:underline">github.com/reisyaprtma</a>
             </div>
         </header>
 
-        <!-- Professional Summary -->
-        <section class="mb-6">
+        <!-- Summary -->
+        <section class="mb-4">
             <div class="section-header">
-                <h3 class="section-title">Professional Summary</h3>
+                <h2 class="section-title">Summary</h2>
             </div>
-            <p class="text-sm text-gray-600 leading-relaxed text-justify">
-                Final-year Informatics Engineering student and <strong>Bangkit 2024 Graduate</strong> with hands-on experience in full-cycle development using <strong>Laravel, Node.js, React, Next.js, and Kotlin</strong>. Successfully delivered client projects ranging from work management systems to AI-powered web applications by translating complex business requirements into scalable technical solutions. Seeking a Junior Software Engineer or Frontend Developer role to leverage skills in React, Next.js, AI integration, and efficient code architecture.
+            <p class="text-sm text-gray-800 leading-relaxed">
+                Informatics Engineering graduate from Universitas Tanjungpura and Bangkit 2024 alumnus focused on full-stack web apps, workflow automation, and practical AI tools. I have built data pipelines for BPS Kabupaten Ketapang, a Microsoft Word AI writing add-in (FrasaTwist), and a cross-platform vocabulary app (Vocate) using Node.js, React, Next.js, Laravel, Python, and PostgreSQL. Looking for a full-time Software Engineer or AI Engineer role.
             </p>
         </section>
 
-        <!-- Technical Skills — ATS-safe: plain comma-separated text under clear labels -->
-        <section class="mb-6">
+        <!-- Technical Skills -->
+        <section class="mb-4">
             <div class="section-header">
-                <h3 class="section-title">Technical Skills</h3>
+                <h2 class="section-title">Technical Skills</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div>
-                    <strong class="block text-gray-800 mb-1">Languages &amp; Frameworks:</strong>
-                    <p class="skills-text text-gray-600">PHP (Laravel), JavaScript, Node.js, React, Next.js, Python, FastAPI, Kotlin, Tailwind CSS, HTML, CSS, MySQL, PostgreSQL</p>
-                </div>
-                <div>
-                    <strong class="block text-gray-800 mb-1">Tools &amp; AI Engineering:</strong>
-                    <p class="skills-text text-gray-600">RESTful API, Git, GitHub, LLM API, Prompt Engineering, n8n Workflows, MVVM Architecture</p>
-                </div>
-            </div>
+            <div class="skills-row"><strong>Languages:</strong> JavaScript, TypeScript, Python, PHP, Kotlin, SQL, HTML, CSS</div>
+            <div class="skills-row"><strong>Frontend &amp; Mobile:</strong> React, Next.js, Tailwind CSS, React Native (Expo), Office.js, Chrome Extensions, Android (MVVM)</div>
+            <div class="skills-row"><strong>Backend &amp; Databases:</strong> Node.js, Express.js, FastAPI, Laravel, Prisma ORM, PostgreSQL, MySQL, Supabase, REST API</div>
+            <div class="skills-row"><strong>AI, Data &amp; Tools:</strong> Google Gemini API, OpenAI SDK, Prompt Engineering, OCR (EasyOCR, OpenCV), QGIS, n8n, Midtrans, Docker, Google Cloud Run, Vercel, Git</div>
         </section>
 
         <!-- Work Experience -->
-        <section class="mb-6">
+        <section class="mb-4">
             <div class="section-header">
-                <h3 class="section-title">Work Experience</h3>
+                <h2 class="section-title">Work Experience</h2>
             </div>
 
-            <div class="mb-5">
-                <div class="flex justify-between items-baseline mb-1">
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
+                    <div>
+                        <span class="role-title">Asisten Pranata Komputer Intern (Magang Hub Batch 2)</span>
+                        <span class="mx-1 text-gray-400">|</span>
+                        <span class="company-name">Badan Pusat Statistik (BPS) Kabupaten Ketapang</span>
+                    </div>
+                    <span class="date-range">[Start Month 2026 &ndash; Present]</span>
+                </div>
+                <p class="tech-line">Tech Stack: Python, Chrome Extensions, SQL, QGIS, EasyOCR, OpenCV</p>
+                <ul class="cv-list">
+                    <li>Cut Regsosek database lookup time (101 MB, 426,000+ rows) from hours of frozen spreadsheets to under a minute by writing a lightweight Python matching script.</li>
+                    <li>Built 4 Chrome extensions for internal BPS portals to automate business directory matching, survey scraping, form auto-filling, and bulk SQL exports past the 9,000-row web limit.</li>
+                    <li>Automated extraction of 2,347 statistics from 26 official BPS PDF publications into a single master workbook, updating all 64 outdated public dynamic tables.</li>
+                    <li>Standardized 2,171+ scanned census maps across 20 districts with Python OCR and a web progress dashboard, while fixing map boundaries and overlapping building coordinates in QGIS.</li>
+                </ul>
+            </div>
+
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
                     <div>
                         <span class="role-title">AI Engineer Intern</span>
                         <span class="mx-1 text-gray-400">|</span>
@@ -178,151 +203,144 @@
                     </div>
                     <span class="date-range">February 2026 &ndash; June 2026</span>
                 </div>
-                <p class="text-xs text-gray-500 mb-1">Tech Stack: Python, FastAPI, PostgreSQL, Google Sheets API</p>
-                <ul class="praq-list">
-                    <li>Integrated AI capabilities into the company's core product, KBS School Management System (LMS), through active participation in the Edumind AI project, enabling intelligent educational features for end users.</li>
-                    <li>Contributed to the development of backend AI services using Python and FastAPI, with PostgreSQL as the primary database, supporting the Edumind AI feature pipeline.</li>
-                    <li>Participated in the design and architecture planning of the KBS AI Chatbot, defining conversational flows and integration points with the existing LMS infrastructure.</li>
+                <p class="tech-line">Tech Stack: Python, FastAPI, PostgreSQL, Google Sheets API</p>
+                <ul class="cv-list">
+                    <li>Built Python and FastAPI backend services with PostgreSQL to power the Edumind AI module inside the company's school management system (LMS).</li>
+                    <li>Designed conversation flows and backend integration for the KBS AI Chatbot using existing student activity data.</li>
                 </ul>
             </div>
 
-            <div class="mb-5">
-                <div class="flex justify-between items-baseline mb-1">
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
                     <div>
                         <span class="role-title">Junior AI Engineer</span>
                         <span class="mx-1 text-gray-400">|</span>
                         <span class="company-name">Futurescale Digital Technology</span>
                     </div>
-                    <span class="date-range">September 2025 &ndash; Desember 2025</span>
+                    <span class="date-range">September 2025 &ndash; December 2025</span>
                 </div>
-                <ul class="praq-list">
-                    <li>Developed 2 high-fidelity AI chatbot demos using Node.js and LLM integration, which were directly utilized in presentations to potential enterprise clients to demonstrate product capabilities.</li>
-                    <li>Designed and refined custom prompt mechanics, achieving high response accuracy during testing phases, ensuring reliable and context-aware interactions for end-users.</li>
-                    <li>Collaborated with the product team to integrate Generative AI features into existing workflows, laying the technical foundation for future commercial AI modules.</li>
+                <p class="tech-line">Tech Stack: Node.js, LLM APIs, Prompt Engineering</p>
+                <ul class="cv-list">
+                    <li>Built 2 working AI chatbot prototypes in Node.js used directly during enterprise client pitches.</li>
+                    <li>Refined prompts and validation rules during internal testing to cut down off-topic answers before connecting the bots to the product team's workflow.</li>
                 </ul>
             </div>
 
-            <div class="mb-5">
-                <div class="flex justify-between items-baseline mb-1">
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
                     <div>
                         <span class="role-title">Fullstack Web Developer</span>
                         <span class="mx-1 text-gray-400">|</span>
                         <span class="company-name">Freelance (Project-Based)</span>
                     </div>
-                    <span class="date-range">May 2025 – June 2025</span>
+                    <span class="date-range">May 2025 &ndash; June 2025</span>
                 </div>
-                <ul class="praq-list">
-                    <li>Transformed a manual, Excel-based workflow into a centralized Work Management System using Laravel &amp; MySQL, eliminating data redundancy and file versioning issues.</li>
-                    <li>Implemented Role-Based Access Control (RBAC) to securely manage permissions for 1 Admin and multiple Workers, streamlining the assignment and tracking process.</li>
-                    <li>Automated project reporting and real-time dashboard updates, significantly improving operational transparency compared to the previous manual entry system.</li>
+                <p class="tech-line">Tech Stack: Laravel, PHP, MySQL</p>
+                <ul class="cv-list">
+                    <li>Built a custom Work Management System (WMS) in Laravel and MySQL to replace a client's manual Excel tracking, eliminating duplicate files and version mix-ups.</li>
+                    <li>Handled the project directly with the client from gathering requirements and database design to deployment.</li>
                 </ul>
             </div>
 
-            <div class="mb-5">
-                <div class="flex justify-between items-baseline mb-1">
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
                     <div>
                         <span class="role-title">Coding Instructor</span>
                         <span class="mx-1 text-gray-400">|</span>
                         <span class="company-name">Freelance</span>
                     </div>
-                    <span class="date-range">September 2024 – May 2025</span>
+                    <span class="date-range">September 2024 &ndash; May 2025</span>
                 </div>
-                <ul class="praq-list">
-                    <li>Mentored undergraduate students in core Computer Science topics: Data Structures, Algorithms, Web Programming, and Artificial Intelligence.</li>
-                    <li>Adapted complex technical concepts into practical learning modules, resulting in 100% of mentees achieving an A grade in their respective final exams.</li>
+                <ul class="cv-list">
+                    <li>Taught undergraduate students Data Structures, Algorithms, Web Programming, and AI through practical coding sessions; every mentored student earned an A on their final exam.</li>
                 </ul>
             </div>
         </section>
 
         <!-- Key Projects -->
-        <section class="mb-6">
+        <section class="mb-4">
             <div class="section-header">
-                <h3 class="section-title">Key Projects</h3>
+                <h2 class="section-title">Projects</h2>
             </div>
 
-            <div class="mb-4">
-                <div class="flex justify-between items-start">
-                    <div class="font-bold text-gray-800 text-sm">SoundMood — Android Mobile App (Bangkit Capstone)</div>
-                    <a href="https://github.com/SoundMood/mobile-development" class="text-xs text-blue-600 hover:underline">github.com/SoundMood</a>
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
+                    <div class="role-title">Vocate &ndash; Bilingual Vocabulary Learning Platform</div>
+                    <a href="https://vocate.reilp.my.id" class="text-xs text-blue-700 hover:underline">vocate.reilp.my.id</a>
                 </div>
-                <p class="text-xs text-gray-500 mb-1">Tech Stack: Kotlin, MVVM, Retrofit, Spotify API, ML Model API</p>
-                <ul class="praq-list mt-1">
-                    <li>Led the mobile front-end engineering, translating wireframes into a functional UI using Kotlin and adhering to MVVM architecture.</li>
-                    <li>Integrated Spotify API and custom ML Model APIs, achieving an 80% mood prediction accuracy in the final MVP deployed for the capstone presentation.</li>
+                <p class="tech-line">Tech Stack: React, Express.js, Prisma, PostgreSQL, React Native (Expo), Chrome Extension, Midtrans, LLM API</p>
+                <ul class="cv-list">
+                    <li>Built a cross-platform English/Indonesian vocabulary app (web, Chrome extension, and mobile) with spaced-repetition scheduling (SM-2), adaptive quizzes, and a 4-stage sentence practice flow.</li>
+                    <li>Designed a shared dictionary cache in PostgreSQL so repeat lookups cost zero AI API calls, paired with an interactive AI tutor and Midtrans subscription billing.</li>
                 </ul>
             </div>
 
-            <div class="mb-4">
-                <div class="flex justify-between items-start">
-                    <div class="font-bold text-gray-800 text-sm">Cortisoul — Mental Health Web Application</div>
-                    <a href="https://github.com/reisyaprtma/cortisoul" class="text-xs text-blue-600 hover:underline">github.com/reisyaprtma/cortisoul</a>
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
+                    <div class="role-title">FrasaTwist &ndash; AI Academic Writing Assistant (Microsoft Word Add-in)</div>
+                    <span class="text-xs text-gray-600">MS Word Add-in &amp; Web Portal</span>
                 </div>
-                <p class="text-xs text-gray-500 mb-1">Tech Stack: React, Next.js, Tailwind CSS | Role: Frontend Developer</p>
-                <ul class="praq-list mt-1">
-                    <li>Developed the frontend of a mental health web application, implementing a Smart Journaling feature that analyzes users' daily journal entries using AI to surface stress levels and mental condition insights.</li>
-                    <li>Built responsive, accessible UI components using React, Next.js, and Tailwind CSS, ensuring a calm and intuitive user experience aligned with mental health best practices.</li>
+                <p class="tech-line">Tech Stack: Node.js, Express.js, Prisma, PostgreSQL, Next.js, Office.js, Google Gemini API, Midtrans, Cloud Run</p>
+                <ul class="cv-list">
+                    <li>Built a Microsoft Word add-in that paraphrases Indonesian academic drafts without breaking Zotero/Mendeley citations, math equations, or document formatting.</li>
+                    <li>Combined offline dictionaries with Google Gemini to scan full theses for typos and un-italicized foreign terms while skipping bibliographies, backed by daily usage limits and Midtrans payments.</li>
                 </ul>
             </div>
 
-            <div class="mb-4">
-                <div class="flex justify-between items-start">
-                    <div class="font-bold text-gray-800 text-sm">IntelliGem — AI Document Assistant</div>
-                    <a href="https://github.com/yeoreium/intelliGem" class="text-xs text-blue-600 hover:underline">github.com/yeoreium/intelliGem</a>
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
+                    <div class="role-title">Work Management System (WMS) &ndash; Project &amp; Task Tracking Web App</div>
+                    <span class="text-xs text-gray-600">Client Web Application</span>
                 </div>
-                <p class="text-xs text-gray-500 mb-1">Tech Stack: Node.js, Google Gemini API, Prompt Engineering</p>
-                <ul class="praq-list mt-1">
-                    <li>Built a full-stack AI assistant using Node.js, leveraging advanced prompt engineering on the Google Gemini 2.5 Flash API to provide contextual paraphrasing and summarization.</li>
+                <p class="tech-line">Tech Stack: Laravel, PHP, MySQL, Tailwind CSS</p>
+                <ul class="cv-list">
+                    <li>Replaced scattered Excel sheets with a centralized web app featuring Admin/Worker role permissions, live task progress dashboards, and automated project reports.</li>
                 </ul>
             </div>
 
-            <div class="mb-4">
-                <div class="flex justify-between items-start">
-                    <div class="font-bold text-gray-800 text-sm">HR Recruitment Chatbot</div>
-                    <a href="https://github.com/reisyaprtma/HR-Chatbot" class="text-xs text-blue-600 hover:underline">github.com/reisyaprtma/HR-Chatbot</a>
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
+                    <div class="role-title">SoundMood &ndash; Mood-Based Music Android App (Bangkit Capstone)</div>
+                    <a href="https://github.com/SoundMood/mobile-development" class="text-xs text-blue-700 hover:underline">github.com/SoundMood/mobile-development</a>
                 </div>
-                <p class="text-xs text-gray-500 mb-1">Tech Stack: n8n, LLM API, Automation Workflows</p>
-                <ul class="praq-list mt-1">
-                    <li>Designed an automated recruitment agent using n8n and AI that automates candidate labeling and analysis.</li>
-                    <li>Streamlined the initial screening process by replacing manual review with instant, standardized AI-generated evaluations.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Education & Certifications -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-                <div class="section-header">
-                    <h3 class="section-title">Education</h3>
-                </div>
-                <div class="mb-3">
-                    <div class="font-bold text-gray-800 text-sm">Universitas Tanjungpura</div>
-                    <div class="text-sm text-gray-600">Bachelor of Informatics Engineering</div>
-                    <div class="text-xs text-gray-500 mt-1">August 2022 – Present (Final Year)</div>
-                </div>
-                <div>
-                    <div class="font-bold text-gray-800 text-sm">Bangkit Academy 2024 — Google, GoTo, Traveloka</div>
-                    <div class="text-sm text-gray-600">Mobile Development Cohort (Graduate)</div>
-                    <div class="text-xs text-gray-500 mt-1">September 2024 – December 2024</div>
-                </div>
-            </div>
-
-            <div>
-                <div class="section-header">
-                    <h3 class="section-title">Certifications</h3>
-                </div>
-                <ul class="text-sm text-gray-600 space-y-2">
-                    <li>
-                        <div class="font-medium text-gray-800">Bangkit Academy Graduate — Mobile Development</div>
-                        <div class="text-xs text-gray-500">Google, GoTo, Traveloka &bull; 2024</div>
-                    </li>
-                    <li>
-                        <div class="font-medium text-gray-800">Belajar Pengembangan Aplikasi Android Intermediate</div>
-                        <div class="text-xs text-gray-500">Dicoding Indonesia &bull; 2024</div>
-                    </li>
+                <p class="tech-line">Tech Stack: Kotlin, MVVM, Retrofit, Spotify API, ML Model API</p>
+                <ul class="cv-list">
+                    <li>Developed the Android app in Kotlin, connecting a mood-detection ML API (80% accuracy in the capstone MVP) with Spotify playlist recommendations.</li>
                 </ul>
             </div>
         </section>
 
+        <!-- Education -->
+        <section class="mb-4">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
+                    <div class="role-title">Universitas Tanjungpura</div>
+                    <span class="date-range">August 2022 &ndash; July 2026</span>
+                </div>
+                <div class="text-sm text-gray-700">Bachelor of Informatics Engineering (S.Kom.) &bull; GPA: 3.59/4.00</div>
+            </div>
+            <div class="entry-block">
+                <div class="flex justify-between items-baseline gap-2">
+                    <div class="role-title">Bangkit Academy 2024 (Google, GoTo, Traveloka)</div>
+                    <span class="date-range">September 2024 &ndash; December 2024</span>
+                </div>
+                <div class="text-sm text-gray-700">Mobile Development Cohort &ndash; Graduate</div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <ul class="cv-list">
+                <li><strong>Bangkit Academy Graduate (Mobile Development)</strong> &ndash; Google, GoTo, Traveloka (2024)</li>
+                <li><strong>Belajar Pengembangan Aplikasi Android Intermediate</strong> &ndash; Dicoding Indonesia (2024)</li>
+            </ul>
+        </section>
     </div>
 
 </body>
